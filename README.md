@@ -3,9 +3,9 @@
 - MSSV: 2474802010092
 
 ### Minh chứng Câu 1
-![Validation Error](screenshots/cau1_validation_error.png)
-![Validation Success](screenshots/cau1_validation_success.png)
+![Validation Error](screenshots/cau1_validation_error.png.png)
+![Validation Success](screenshots/cau1_validation_success.png.png)
 
 ### Minh chứng Câu 2
-![Profile Intent](screenshots/cau2_profile_intent.png)
+![Profile Intent](screenshots/cau2_profile_intent.png.png)
 
