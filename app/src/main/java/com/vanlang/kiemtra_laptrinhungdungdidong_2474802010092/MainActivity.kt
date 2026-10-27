@@ -1,5 +1,6 @@
 package com.vanlang.kiemtra_laptrinhungdungdidong_2474802010092
 
+import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
 import android.util.Patterns
@@ -13,7 +14,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // Ánh xạ bằng findViewById theo đúng quy định đề bài
         val etEmail = findViewById<EditText>(R.id.etEmail)
         val etPassword = findViewById<EditText>(R.id.etPassword)
         val btnLogin = findViewById<Button>(R.id.btnLogin)
@@ -35,6 +35,11 @@ class MainActivity : AppCompatActivity() {
             } else {
                 tvStatus.text = "Validation Successful!"
                 tvStatus.setTextColor(Color.GREEN)
+
+
+                val intent = Intent(this, ProfileActivity::class.java)
+                intent.putExtra("USER_EMAIL", email)
+                startActivity(intent)
             }
         }
     }
